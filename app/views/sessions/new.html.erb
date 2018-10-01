@@ -1,0 +1,5 @@
+<%= form_for @user, as: :auth, url: sessions_path do |f| %>
+  <%= f.email_field :email, autofocus: true %>
+  <%= f.password_field :password %>
+  <%= f.submit %>
+<% end %>
