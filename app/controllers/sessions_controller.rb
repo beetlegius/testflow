@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find auth_params
+    @user = User.new auth_params
     login(@user.email, @user.password)
-    redirect_to root_path, notice: 'Login successfull'
+    redirect_to products_path, notice: 'Login successfull'
   end
 
   def destroy
