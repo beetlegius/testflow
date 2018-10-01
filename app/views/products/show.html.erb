@@ -1,0 +1,6 @@
+<h1>
+  <%= @product.name %>
+  <%= tag.small @product.category.name %>
+</h1>
+
+<p>Price: <%= number_to_currency @product.price %></p>
