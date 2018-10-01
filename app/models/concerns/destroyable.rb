@@ -1,5 +1,5 @@
 module Destroyable
-  include ActiveSupport::Concern
+  extend ActiveSupport::Concern
 
   def can_delete?
     true
