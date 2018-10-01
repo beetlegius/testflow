@@ -1,5 +1,12 @@
 <%= form_for @user, as: :auth, url: sessions_path do |f| %>
-  <%= f.email_field :email, autofocus: true %>
-  <%= f.password_field :password %>
-  <%= f.submit %>
+  <div>
+    <%= f.label :email, 'Correo electrónico' %>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+  <div>
+    <%= f.label :password, 'Contraseña' %>
+    <%= f.password_field :password %>
+  </div>
+
+  <%= f.submit 'Buscar' %>
 <% end %>
